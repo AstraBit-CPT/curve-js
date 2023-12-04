@@ -1,15 +1,15 @@
 import { IDict, IPoolData } from "../../interfaces";
 import { lowerCasePoolDataAddresses } from "../utils.js";
-import tripoolSwapABI from '../abis/3pool/swap.json' assert { type: 'json' };
-import raiSwapABI from '../abis/rai/swap.json' assert { type: 'json' };
-import raiZapABI from '../abis/rai/deposit.json' assert { type: 'json' };
-import tricryptoSwapABI from '../abis/tricrypto-xdai/swap.json' assert { type: 'json' };
-import tricryptoZapABI from '../abis/tricrypto-xdai/zap.json' assert { type: 'json' };
-import eureSwapABI from "../abis/eureusd/swap.json" assert { type: 'json' };
-import eureDepositABI from "../abis/eureusd/zap.json" assert { type: 'json' };
-import gaugeRewardsOnlyABI from '../abis/gauge_rewards_only.json' assert { type: 'json' };
-import gaugeChildABI from '../abis/gauge_child.json' assert { type: 'json' };
-import streamerABI from '../abis/streamer.json' assert { type: 'json' };
+import tripoolSwapABI from '../abis/3pool/swap.json';
+import raiSwapABI from '../abis/rai/swap.json';
+import raiZapABI from '../abis/rai/deposit.json';
+import tricryptoSwapABI from '../abis/tricrypto-xdai/swap.json';
+import tricryptoZapABI from '../abis/tricrypto-xdai/zap.json';
+import eureSwapABI from "../abis/eureusd/swap.json";
+import eureDepositABI from "../abis/eureusd/zap.json";
+import gaugeRewardsOnlyABI from '../abis/gauge_rewards_only.json';
+import gaugeChildABI from '../abis/gauge_child.json';
+import streamerABI from '../abis/streamer.json';
 
 export const POOLS_DATA_XDAI: IDict<IPoolData> = lowerCasePoolDataAddresses({
     '3pool': {

@@ -29,7 +29,7 @@ import {
 } from '../utils.js';
 import { IDict, IReward, IProfit, IPoolType } from '../interfaces';
 import { curve as _curve, curve } from "../curve.js";
-import ERC20Abi from '../constants/abis/ERC20.json' assert { type: 'json' };
+import ERC20Abi from '../constants/abis/ERC20.json';
 
 
 const DAY = 86400;

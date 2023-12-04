@@ -1,10 +1,10 @@
 import { curve } from "../curve.js";
 import { IDict, IFactoryPoolType, IPoolData, ICurve, IPoolDataFromApi } from "../interfaces";
-import factoryGaugeABI from "../constants/abis/gauge_factory.json" assert { type: 'json' };
-import gaugeChildABI from "../constants/abis/gauge_child.json" assert { type: 'json' };
-import ERC20ABI from "../constants/abis/ERC20.json" assert { type: 'json' };
-import cryptoFactorySwapABI from "../constants/abis/factory-crypto/factory-crypto-pool-2.json" assert { type: 'json' };
-import tricryptoFactorySwapABI from "../constants/abis/factory-tricrypto/factory-tricrypto-pool.json" assert { type: 'json' };
+import factoryGaugeABI from "../constants/abis/gauge_factory.json";
+import gaugeChildABI from "../constants/abis/gauge_child.json";
+import ERC20ABI from "../constants/abis/ERC20.json";
+import cryptoFactorySwapABI from "../constants/abis/factory-crypto/factory-crypto-pool-2.json";
+import tricryptoFactorySwapABI from "../constants/abis/factory-tricrypto/factory-tricrypto-pool.json";
 import { FACTORY_CONSTANTS } from "./constants.js";
 import { CRYPTO_FACTORY_CONSTANTS } from "./constants-crypto.js";
 import { getPoolIdByAddress, setFactoryZapContracts } from "./common.js";

@@ -1,9 +1,9 @@
-import { Contract as MulticallContract } from "ethcall";
+import { Contract as MulticallContract } from "../dependencies/ethcall/src";
 import { curve } from "../curve.js";
 import {IDict, IPoolData, ICurve, REFERENCE_ASSET, IPoolDataShort} from "../interfaces";
-import ERC20ABI from "../constants/abis/ERC20.json" assert { type: 'json' };
-import factoryGaugeABI from "../constants/abis/gauge_factory.json" assert { type: 'json' };
-import gaugeChildABI from "../constants/abis/gauge_child.json" assert { type: 'json' };
+import ERC20ABI from "../constants/abis/ERC20.json";
+import factoryGaugeABI from "../constants/abis/gauge_factory.json";
+import gaugeChildABI from "../constants/abis/gauge_child.json";
 import { getPoolIdByAddress, setFactoryZapContracts } from "./common.js";
 import { FACTORY_CONSTANTS } from "./constants.js";
 import { getPoolName } from "../utils.js";

@@ -1,16 +1,16 @@
 import { IDict, IPoolData } from "../../interfaces";
 import { lowerCasePoolDataAddresses } from "../utils.js";
-import twopoolSwapABI from '../abis/2pool/swap.json' assert { type: 'json' };
-import fusdtSwapABI from '../abis/fusdt/swap.json' assert { type: 'json' };
-import fusdtZapABI from '../abis/fusdt/zap.json' assert { type: 'json' };
-import renSwapABI from '../abis/ren-fantom/swap.json' assert { type: 'json' };
-import triCryptoSwapNoZap from '../abis/tricrypto/swapNoZap.json' assert { type: 'json' };
-import ibSwapABI from '../abis/ib/swap.json' assert { type: 'json' };
-import aaveSwapABI from '../abis/aave/swap.json' assert { type: 'json' };
-// import paaveRewardsabi from '../abis/paave/rewards.json' assert { type: 'json' };
-import gaugeChildABI from '../abis/gauge_child.json' assert { type: 'json' };
-import gaugeRewardsOnlyABI from '../abis/gauge_rewards_only.json' assert { type: 'json' };
-import streamerABI from '../abis/streamer.json' assert { type: 'json' };
+import twopoolSwapABI from '../abis/2pool/swap.json';
+import fusdtSwapABI from '../abis/fusdt/swap.json';
+import fusdtZapABI from '../abis/fusdt/zap.json';
+import renSwapABI from '../abis/ren-fantom/swap.json';
+import triCryptoSwapNoZap from '../abis/tricrypto/swapNoZap.json';
+import ibSwapABI from '../abis/ib/swap.json';
+import aaveSwapABI from '../abis/aave/swap.json';
+// import paaveRewardsabi from '../abis/paave/rewards.json';
+import gaugeChildABI from '../abis/gauge_child.json';
+import gaugeRewardsOnlyABI from '../abis/gauge_rewards_only.json';
+import streamerABI from '../abis/streamer.json';
 
 
 export const POOLS_DATA_FANTOM: IDict<IPoolData> = lowerCasePoolDataAddresses({

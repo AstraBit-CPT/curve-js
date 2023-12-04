@@ -2,8 +2,8 @@ import {ethers, Contract, Typed} from "ethers";
 import { curve } from "../curve.js";
 import { getPool } from "../pools/index.js";
 import { parseUnits, BN, mulBy1_3, getPoolIdBySwapAddress, DIGas, smartNumber } from '../utils.js';
-import CurveLpTokenV5ABI from "../constants/abis/curve_lp_token_v5.json" assert { type: 'json' };
-import Plain2ETHOracleABIABI from "../constants/abis/factory-v2/Plain2ETHOracle.json" assert { type: 'json' };
+import CurveLpTokenV5ABI from "../constants/abis/curve_lp_token_v5.json";
+import Plain2ETHOracleABIABI from "../constants/abis/factory-v2/Plain2ETHOracle.json";
 
 
 // ------- STABLE PLAIN POOLS -------

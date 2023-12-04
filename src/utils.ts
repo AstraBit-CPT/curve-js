@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { Contract } from 'ethers';
-import { Contract as MulticallContract } from "ethcall";
+import { Contract as MulticallContract } from "./dependencies/ethcall/src";
 import BigNumber from 'bignumber.js';
 import {IChainId, IDict, INetworkName, IRewardFromApi, REFERENCE_ASSET} from './interfaces';
 import { curve, NETWORK_CONSTANTS } from "./curve.js";
 import { _getFactoryAPYsAndVolumes, _getLegacyAPYsAndVolumes, _getAllPoolsFromApi, _getSubgraphData } from "./external-api.js";
-import ERC20Abi from './constants/abis/ERC20.json' assert { type: 'json' };
+import ERC20Abi from './constants/abis/ERC20.json';
 import { L2Networks } from './constants/L2Networks.js';
 
 

@@ -2,7 +2,7 @@ import { Contract } from "ethers";
 import BigNumber from "bignumber.js";
 import { curve } from "./curve.js";
 import { IDict, IChainId } from "./interfaces";
-import feeDistributorViewABI from "./constants/abis/fee_distributor_view.json" assert { type: 'json' };
+import feeDistributorViewABI from "./constants/abis/fee_distributor_view.json";
 import {
     _getBalances,
     _prepareAddresses, DIGas,

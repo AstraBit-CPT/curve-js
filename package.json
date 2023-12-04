@@ -1,5 +1,5 @@
 {
-  "name": "@curvefi/api",
+  "name": "curve-api",
   "version": "2.52.3",
   "description": "JavaScript library for curve.fi",
   "main": "lib/index.js",
@@ -16,7 +16,7 @@
   "scripts": {
     "build": "rm -rf lib && tsc -p tsconfig.build.json"
   },
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@types/chai": "^4.3.4",
     "@types/memoizee": "^0.4.7",
@@ -34,8 +34,6 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bignumber.js": "^9.0.1",
-    "ethcall": "^6.0.2",
-    "ethers": "^6.7.0",
     "memoizee": "^0.4.15"
   }
 }
