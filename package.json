@@ -1,5 +1,5 @@
 {
-  "name": "curve-api",
+  "name": "@astrabit/curve-api",
   "version": "2.52.3",
   "description": "JavaScript library for curve.fi",
   "main": "lib/index.js",
@@ -8,10 +8,10 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/curvefi/curve-js.git"
+    "url": "https://github.com/AstraBit-CPT/curve-js.git"
   },
   "bugs": {
-    "url": "https://github.com/curvefi/curve-js/issues"
+    "url": "https://github.com/AstraBit-CPT/curve-js/issues"
   },
   "scripts": {
     "build": "rm -rf lib && tsc -p tsconfig.build.json"
@@ -34,6 +34,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bignumber.js": "^9.0.1",
+    "ethers": "^6.9.0",
     "memoizee": "^0.4.15"
   }
 }

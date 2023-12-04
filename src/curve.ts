@@ -1,5 +1,5 @@
 import { ethers, Contract, Networkish, BigNumberish, Numeric, AbstractProvider } from "ethers";
-import { Provider as MulticallProvider, Contract as MulticallContract } from './dependencies/ethcall/src';
+import { Provider as MulticallProvider, Contract as MulticallContract } from './dependencies/ethcall/index.js';
 import { getFactoryPoolData } from "./factory/factory.js";
 import { getFactoryPoolsDataFromApi } from "./factory/factory-api.js";
 import { getCryptoFactoryPoolData } from "./factory/factory-crypto.js";

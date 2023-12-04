@@ -1,4 +1,4 @@
-import { Contract as MulticallContract } from "../dependencies/ethcall/src";
+import { Contract as MulticallContract } from "../dependencies/ethcall/index.js";
 import { curve } from "../curve.js";
 import {IDict, IPoolData, ICurve, REFERENCE_ASSET, IPoolDataShort} from "../interfaces";
 import ERC20ABI from "../constants/abis/ERC20.json";

@@ -1,7 +1,6 @@
 .idea
 node_modules
 dist/**/*
-lib/**/*
 package-lock.json
 pnpm-lock.yaml
 yarn.lock

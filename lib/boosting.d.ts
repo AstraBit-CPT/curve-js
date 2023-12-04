@@ -1,0 +1,36 @@
+import { IDict, IChainId } from "./interfaces";
+export declare const getCrv: (...addresses: string[] | string[][]) => Promise<IDict<string> | string>;
+export declare const getLockedAmountAndUnlockTime: (...addresses: string[] | string[][]) => Promise<IDict<{
+    lockedAmount: string;
+    unlockTime: number;
+}> | {
+    lockedAmount: string;
+    unlockTime: number;
+}>;
+export declare const getVeCrv: (...addresses: string[] | string[][]) => Promise<IDict<string> | string>;
+export declare const getVeCrvPct: (...addresses: string[] | string[][]) => Promise<IDict<string> | string>;
+export declare const isApproved: (amount: number | string) => Promise<boolean>;
+export declare const approveEstimateGas: (amount: number | string) => Promise<number | number[]>;
+export declare const approve: (amount: number | string) => Promise<string[]>;
+export declare const createLockEstimateGas: (amount: number | string, days: number) => Promise<number>;
+export declare const calcUnlockTime: (days: number, start?: number) => number;
+export declare const createLock: (amount: number | string, days: number) => Promise<string>;
+export declare const increaseAmountEstimateGas: (amount: number | string) => Promise<number>;
+export declare const increaseAmount: (amount: number | string) => Promise<string>;
+export declare const increaseUnlockTimeEstimateGas: (days: number) => Promise<number>;
+export declare const increaseUnlockTime: (days: number) => Promise<string>;
+export declare const withdrawLockedCrvEstimateGas: () => Promise<number>;
+export declare const withdrawLockedCrv: () => Promise<string>;
+export declare const claimableFees: (address?: string) => Promise<string>;
+export declare const claimFeesEstimateGas: (address?: string) => Promise<number>;
+export declare const claimFees: (address?: string) => Promise<string>;
+export declare const lastEthBlock: () => Promise<number>;
+export declare const getAnycallBalance: () => Promise<string>;
+export declare const topUpAnycallEstimateGas: (amount?: number | string) => Promise<number>;
+export declare const topUpAnycall: (amount?: number | string) => Promise<string>;
+export declare const lastBlockSent: (chainId: IChainId) => Promise<number>;
+export declare const blockToSend: () => Promise<number>;
+export declare const sendBlockhashEstimateGas: (block: number, chainId: IChainId) => Promise<number>;
+export declare const sendBlockhash: (block: number, chainId: IChainId) => Promise<string>;
+export declare const submitProofEstimateGas: (block: number, address?: string) => Promise<number>;
+export declare const submitProof: (block: number, address?: string) => Promise<string>;

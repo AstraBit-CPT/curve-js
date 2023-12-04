@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { Contract } from 'ethers';
-import { Contract as MulticallContract } from "./dependencies/ethcall/src";
+import { Contract as MulticallContract } from "./dependencies/ethcall/index.js";
 import BigNumber from 'bignumber.js';
 import {IChainId, IDict, INetworkName, IRewardFromApi, REFERENCE_ASSET} from './interfaces';
 import { curve, NETWORK_CONSTANTS } from "./curve.js";
